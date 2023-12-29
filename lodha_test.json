@@ -1,0 +1,18 @@
+{
+  "measurement": "energy",
+  "tags": {
+    'panel_no': "iam-gw-210146",
+    'device_code': "MOD02",
+    'device_name': "Metering SPD(MAINS EM)",
+    'zone': "WHIMP",
+    'min_alarm': "0.0",
+    'max_alarm': "0.0",
+    'name': "Active Energy Import",
+    'alarm_name': "NA",
+    'unique_tag': "MOD02-WHIMP"
+  },
+  "time": time,
+  "fields": {
+    'value': 168865.05
+  }
+}

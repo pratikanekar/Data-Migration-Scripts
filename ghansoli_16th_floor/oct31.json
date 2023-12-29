@@ -1,0 +1,91 @@
+{
+  "measurement": "energy",
+  "tags": {
+    'panel_no': "iam-gw-210104",
+    'device_code': "MOD02",
+    'device_name': "Capacitor(Office-3)",
+    'zone': "KWHEXP",
+    'min_alarm': "0.0",
+    'max_alarm': "0.0",
+    'name': "Active Energy Export (Into Load)",
+    'alarm_name': "NA",
+    'unique_tag': "MOD02-KWHEXP"
+  },
+  "time": time,
+  "fields": {
+    'value': 873.20
+  }
+},
+{
+  "measurement": "energy",
+  "tags": {
+    'panel_no': "iam-gw-210104",
+    'device_code': "MOD03",
+    'device_name': "UPS(Office-4)",
+    'zone': "KWHEXP",
+    'min_alarm': "0.0",
+    'max_alarm': "0.0",
+    'name': "Active Energy Export (Into Load)",
+    'alarm_name': "NA",
+    'unique_tag': "MOD03-KWHEXP"
+  },
+  "time": time,
+  "fields": {
+    'value': 61452.57
+  }
+},
+{
+  "measurement": "energy",
+  "tags": {
+    'panel_no': "iam-gw-210104",
+    'device_code': "MOD04",
+    'device_name': "Lighting(office-1)",
+    'zone': "KWHEXP",
+    'min_alarm': "0.0",
+    'max_alarm': "0.0",
+    'name': "Active Energy Export (Into Load)",
+    'alarm_name': "NA",
+    'unique_tag': "MOD04-KWHEXP"
+  },
+  "time": time,
+  "fields": {
+    'value': 74008.76
+  }
+},
+{
+  "measurement": "energy",
+  "tags": {
+    'panel_no': "iam-gw-210104",
+    'device_code': "MOD05",
+    'device_name': "Power(office-2)",
+    'zone': "KWHEXP",
+    'min_alarm': "0.0",
+    'max_alarm': "0.0",
+    'name': "Active Energy Export (Into Load)",
+    'alarm_name': "NA",
+    'unique_tag': "MOD05-KWHEXP"
+  },
+  "time": time,
+  "fields": {
+    'value': 35924.76
+  }
+},
+{
+  "measurement": "energy",
+  "tags": {
+    'panel_no': "iam-gw-210104",
+    'device_code': "MOD06",
+    'device_name': "HVAC",
+    'zone': "KWHEXP",
+    'min_alarm': "0.0",
+    'max_alarm': "0.0",
+    'name': "Active Energy Export (Into Load)",
+    'alarm_name': "NA",
+    'unique_tag': "MOD06-KWHEXP"
+  },
+  "time": time,
+  "fields": {
+    'value': 102162.46
+  }
+}
+

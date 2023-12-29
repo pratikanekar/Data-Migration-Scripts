@@ -80,7 +80,7 @@ def write_data_to_influx2(dest_client, measurement, data):
                     influx2_point.tag('name', record['name'])
                     influx2_point.tag('unique_tag', record['unique_tag'])
                     influx2_point.tag('zone', record['zone'])
-                    influx2_point.field('_value', record['_value'])
+                    influx2_point.field('value', record['_value'])
                     influx2_data.append(influx2_point)
 
                 except Exception as e:
@@ -99,8 +99,8 @@ if __name__ == "__main__":
 
     # # Decrementing Datetime
     # end_time = datetime.now()
-    # start_time = end_time - timedelta(days=7)
-    start_time, end_time = calculate_dates(month="nov")
+    # start_time = end_time - timedelta(days=1)
+    start_time, end_time = calculate_dates(month="sep")
 
     print(f"[FETCHING DATA 2.0] || FROM TIME: {start_time.strftime('%Y-%m-%d %H:%M:%S')}  |  END TIME: {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
 
