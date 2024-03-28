@@ -13,12 +13,12 @@ source_influx2_bucket = 'lodha-supremus'
 source_influx2_token = 'Vu1c6LfOvuVy941gcSYAQP4MaxgqeGg8utt731i3ZtOwqdGFNJQtTgBbWiiPQgt-TBYphj9x_LjgPEW9m6fUog=='
 
 
-dest_influx2_url = 'http://10.129.2.23:8086'
+dest_influx2_url = 'http://192.168.1.11:8087'
 dest_influx2_org = 'iam'
 dest_influx2_username = 'root'
 dest_influx2_password = 'rootrootroot'
-dest_influx2_bucket = 'b_to_b'
-dest_influx2_token = '9rcqoz4onukDdYJsWqauL5i_-VqA0QZl4H_71zgaUJKwkUmZqlzUm3AbwYhR1kVy-2_wWxihEWeAxV4WZVcYJg=='
+dest_influx2_bucket = 'data'
+dest_influx2_token = 'Vu1c6LfOvuVy941gcSYAQP4MaxgqeGg8utt731i3ZtOwqdGFNJQtTgBbWiiPQgt-TBYphj9x_LjgPEW9m6fUog=='
 
 measurements_to_migrate = ['co2', 'current', 'energy',  'frequency', 'humidity', 'misc',  'power', 'speed', 'temperature', 'voltage']
 # measurements_to_migrate = ['energy']
@@ -30,8 +30,8 @@ def calculate_dates(year, month, week):
         last_day_of_month = datetime(year, month, calendar.monthrange(year, month)[1])
 
         # Calculate the start and end of the week
-        start_of_week = first_day_of_month + timedelta(days=(week - 1) * 7)
-        end_of_week = min(first_day_of_month + timedelta(days=week * 7 - 1, hours=23, minutes=59, seconds=59), last_day_of_month + timedelta(hours=23, minutes=59, seconds=59))
+        start_of_week = first_day_of_month + timedelta(days=(week - 1) * 1)
+        end_of_week = min(first_day_of_month + timedelta(days=week * 1 - 1, hours=23, minutes=59, seconds=59), last_day_of_month + timedelta(hours=23, minutes=59, seconds=59))
 
         return start_of_week, end_of_week
     except Exception as e:
@@ -103,7 +103,7 @@ if __name__ == "__main__":
         month_list = range(1, 13)
         for measurement in measurements_to_migrate:
             for month in month_list:
-                for week in range(1, 6):
+                for week in range(1, 32):
                     start_time, end_time = calculate_dates(year, month, week)
 
                     print(
