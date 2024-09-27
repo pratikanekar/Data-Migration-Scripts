@@ -1,7 +1,5 @@
 from influxdb_client import InfluxDBClient
-from influxdb_client import Point
 import calendar
-from influxdb_client.client.write_api import SYNCHRONOUS
 from datetime import datetime
 from loguru import logger
 import psycopg2
