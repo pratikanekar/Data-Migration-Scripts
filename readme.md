@@ -8,3 +8,4 @@ In this Repository we do Following type of migration
 4. Influx 2.0 to Influx 2.0 Specific Month
 5. Influx 2.0 to Postgres Specific Month
 6. Influx 2.0 Add Specific Date Manual Entry
+7. Influx 2.0 Override data on Same timeline
